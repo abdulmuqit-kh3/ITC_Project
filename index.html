@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Golden Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light-theme">
+
+    <header class="header-section">
+        <h1><b>THE GOLDEN BAKERY</b></h1>
+        <p><b>Where Quality Meets Golden Taste</b></p>
+    </header>
+
+    <nav class="navbar">
+        <button onclick="toggleTheme()" id="themeBtn"> Dark Mode</button>
+        <div class="cart-box">
+            <span><b id="cartCount">0</b> Items</span>
+            <span>| Total: PKR <b id="totalPrice">0</b></span>
+            <button class="checkout-btn" onclick="toggleCart()">View Cart</button>
+        </div>
+    </nav>
+
+    <main class="product-grid">
+
+        <div class="card">
+            <img src="https://bakewithzoha.com/wp-content/uploads/2024/09/red-velvet-cake-featured-1.jpg">
+            <div class="card-body">
+                <h3>Red Velvet Cake</h3>
+                <p>Soft red velvet layers with smooth cream cheese frosting</p>
+                <p class="price"><b>PKR 2499</b></p>
+                <div class="buttons">
+                    <button class="add-btn"
+                        onclick="addToCart('Red Velvet Cake', 2499,'https://bakewithzoha.com/wp-content/uploads/2024/09/red-velvet-cake-featured-1.jpg')">Add  to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/gh2ekOIvGBg/maxresdefault.jpg">
+            <div class="card-body">
+                <h3>Triple Chocolate Mousse Cake</h3>
+                <p>Three layers of rich chocolate mousse with a silky finish.</p>
+                <p class="price"><b>PKR 2499</b></p>
+                <div class="buttons">
+                    <button class="add-btn"
+                        onclick="addToCart('Triple Chocolate Mousse Cake', 2499, 'https://i.ytimg.com/vi/gh2ekOIvGBg/maxresdefault.jpg')">Add  to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://www.cakewalk.ae/uploads/p_products/dark-chocolate-truffle-web.jpg">
+            <div class="card-body">
+                <h3>Chocolate Royal Mirror Cake</h3>
+                <p>This Specially Crafted for Chocolate Lovers</p>
+                <p class="price"><b>PKR 2499</b></p>
+                <div class="buttons">
+                    <button class="add-btn" onclick="addToCart('Chocolate Royal Mirror Cake', 2499,'https://www.cakewalk.ae/uploads/p_products/dark-chocolate-truffle-web.jpg')">Add to   Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://assets.indolj.io/upload/1673695125-rafelo-min.jpg">
+            <div class="card-body">
+                <h3>Rafaelo Cake with Vanilla Balls</h3>
+                <p>Creamy coconut cake topped with Rafaelo bites</p>
+                <p class="price"><b>PKR 2499</b></p>
+                <div class="buttons">
+                    <button class="add-btn" onclick="addToCart('Rafaelo Cake', 2499,'https://assets.indolj.io/upload/1673695125-rafelo-min.jpg')">Add to Cart</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://layers.pk/wp-content/uploads/2021/11/Lotus.jpg">
+            <div class="card-body">
+                <h3>Premium Lotus Cake</h3>
+                <p>Lotus Biscoff spread fluffy vanilla sponge</p>
+                <p class="price"><b>PKR 2499</b></p>
+                <div class="buttons">
+                    <button class="add-btn" onclick="addToCart('Premium Lotus Cake', 2499,'https://layers.pk/wp-content/uploads/2021/11/Lotus.jpg')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.pexels.com/photos/2684556/pexels-photo-2684556.jpeg">
+            <div class="card-body">
+                <h3>Honey Crumb Cake</h3>
+                <p>Pure Honey Bliss in Every Bite</p>
+                <p class="price"><b>PKR 2499</b></p>
+                <div class="buttons">
+                    <button class="add-btn" onclick="addToCart('Honey Crumb Cake', 2499,'https://images.pexels.com/photos/2684556/pexels-photo-2684556.jpeg')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://hbtbakery.com/wp-content/uploads/2023/10/HBT_compressed-1_page-0131.jpg">
+            <div class="card-body">
+                <h3>Black Forest Cake</h3>
+                <p>A Classic cake with chocolate layers, cherries, and whipped cream.</p>
+                <p class="price"><b>PKR 2499</b></p>
+                <div class="buttons">
+                    <button class="add-btn" onclick="addToCart('Black Forest Cake', 2499,'https://hbtbakery.com/wp-content/uploads/2023/10/HBT_compressed-1_page-0131.jpg')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://bkmedia.bakingo.com/sq-pineapple-cake0022pifr-AAA_1.jpg">
+            <div class="card-body">
+                <h3>Golden Glaze Pineapple Gateau</h3>
+                <p>A slice of sunshine topped with a nutty crunch.</p>
+                <p class="price"><b>PKR 2499</b></p>
+                <div class="buttons">
+                    <button class="add-btn" onclick="addToCart('Golden Glaze Pineapple Gateau', 2499,'https://bkmedia.bakingo.com/sq-pineapple-cake0022pifr-AAA_1.jpg')">Add to
+                        Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75">
+            <div class="card-body">
+                <h3>Ferrero Rocher Cupcake</h3>
+                <p>Chocolate cupcake with Hazelnut & Ferrero on top</p>
+                <p class="price"><b>PKR 749</b></p>
+                <div class="buttons">
+                    <button class="add-btn" onclick="addToCart('Ferrero Rocher Cupcake', 749,'https://images.unsplash.com/photo-1603532648955-039310d9ed75')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    <div class="card">
+            <img src="https://bonnibakery.com/wp-content/uploads/2024/03/Chocolate-Cupcakes_52.jpg.webp" alt="Chocolate">
+            <div class="card-body">
+                <h3>Chocolate Cupcake</h3>
+                <p>Rich chocolate sponge with velvety smooth frosting</p>
+                <p class="price"><b>PKR 749</b></p>
+                <div class="buttons">
+                    <button class="add-btn" onclick="addToCart('Chocolate Cupcake', 749,'https://bonnibakery.com/wp-content/uploads/2024/03/Chocolate-Cupcakes_52.jpg.webp')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://bonnibakery.com/wp-content/uploads/2022/03/Pistachio-Cupcakes_23.jpg" alt="Pistachio">
+            <div class="card-body">
+                <h3>Pistachio Cupcake</h3>
+                <p>A perfect blend of roasted pistachios and creamy sweetness.</p>
+                <p class="price"><b>PKR 749</b></p>
+                <div class="buttons">
+                    <button class="add-btn" onclick="addToCart('Pistachio Cupcake', 749,'https://bonnibakery.com/wp-content/uploads/2022/03/Pistachio-Cupcakes_23.jpg')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://thescranline.com/wp-content/uploads/2025/02/STRAWBERRY-VANILLA-CUPCAKES-WEB-03-1152x1536.jpg" alt="Strawberry Cupcake">
+            <div class="card-body">
+                <h3>Strawberry Cupcake</h3>
+                <p>Sweet & tangy cake with creamy berry frosting.</p>
+                <p class="price"><b>PKR 749</b></p>
+                <div class="buttons">
+                    <button class="add-btn" onclick="addToCart('Strawberry Cupcake', 749,'https://thescranline.com/wp-content/uploads/2025/02/STRAWBERRY-VANILLA-CUPCAKES-WEB-03-1152x1536.jpg')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://static.tossdown.com/images/ac8f4b5a-761d-401b-a543-ac62b283f893.jpg" alt="Strawberry Cupcake">
+            <div class="card-body">
+                <h3>Shahi Biscuit Box</h3>
+                <p>Everything you want in one box Made with 100% pure desi butter.</p>
+                <p class="price"><b>PKR 990 (0.5kg box)</b></p>
+                <div class="buttons">
+                    <button class="add-btn" onclick="addToCart('Shahi Biscuit Box', 990,'https://static.tossdown.com/images/ac8f4b5a-761d-401b-a543-ac62b283f893.jpg')">Add to Cart</button>                </div>
+            </div>
+        </div>
+         <div class="card">
+            <img src="https://www.abakingjourney.com/wp-content/uploads/2018/04/Almond-Cookies-Feature-1.jpg" alt="Royal Butter Almond Macaroons">
+            <div class="card-body">
+                <h3>Royal Butter Almond Macaroons</h3>
+                <p>Hand-picked almonds met with the traditional aroma of real desi butter.</p>
+                
+                <p class="price"><b>PKR 990 (0.5kg box)</b></p>
+                <div class="buttons">
+                    <button class="add-btn" onclick="addToCart('Royal Butter Almond Macaroons', 990,'https://www.abakingjourney.com/wp-content/uploads/2018/04/Almond-Cookies-Feature-1.jpg')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        </div>
+         <div class="card">
+            <img src="https://www.momontimeout.com/wp-content/uploads/2022/12/thumbprint-cookies-SQUARE.jpeg" alt="Cocount Cookies with Huge Crispness">
+            <div class="card-body">
+                <h3>Jam Thumbprint Cookies</h3>
+                <p>Buttery, crispy, and sweet.Our Jam Jewels are handcrafted for those who love a little extra joy.</p>
+                
+                <p class="price"><b>PKR 990 (0.5kg box)</b></p>
+                <div class="buttons">
+                    <button class="add-btn" onclick="addToCart('Jam Thumbprint Cookies', 990,'https://www.momontimeout.com/wp-content/uploads/2022/12/thumbprint-cookies-SQUARE.jpeg')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h5>&copy; 2026 The Golden Bakery | All Rights Reserved</h5>
+        <p><b>Email</b>: contact@goldenbakery.com</p>
+        <p><b>Address</b>: DHA phase 8 Karachi Pakistan </p>
+        <div class="social-icons">
+            <div class="facebook">F</div>
+            <div class="whatsapp">W</div>
+            <div class="twitter">T</div>
+        </div>
+        
+    </footer>
+
+    <div class="cart-icon" onclick="toggleCart()">🛒</div>
+
+    <div id="cartSidebar" class="cart-sidebar">
+        <h2>Your Cart</h2>
+        <div id="cartItems"></div>
+        <hr>
+        <h3>Total: PKR <span id="sidebarTotal">0</span></h3>
+        <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
